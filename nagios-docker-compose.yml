@@ -1,0 +1,27 @@
+#NAGIOS
+version: '3.3'
+services:
+  nagios:
+    container_name: nagios4
+    image: jasonrivers/nagios:latest
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    environment:
+      - NAGIOSADMIN_USER=nagiosadmin
+      - NAGIOSAMDIN_PASS=nagios
+    volumes:
+      - ./dockprom/nagios/config/nagios/etc/:/opt/nagios/etc/
+      - ./dockprom/nagios/config/nagios/var/:/opt/nagios/var/
+      - ./dockprom/nagios/config/plugins:/opt/Custom-Nagios-Plugins
+      - ./dockprom/nagios/config/nagiosgraph:/opt/nagiosgraph/etc \
+      - ./dockprom/nagios/config/apache2/nagios.conf:/etc/apache2/sites-available/nagios.confcd nagios
+    labels:
+      org.label-schema.group: "monitoring"
+
+
+#Update
+#https://hub.docker.com/r/guessi/docker-nagios4/
+
+
+
