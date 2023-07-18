@@ -20,5 +20,20 @@ Monitoramento de Infraestrutura utilizando ferramentas e metodologias DevOps com
 - Nagios Core 4.4.6 
 -(https://hub.docker.com/r/guessi/docker-nagios4)
 
+## Verificando as configurações
+
+```yaml
+amtool check-config /etc/alertmanager/config.yml 
+```
+
 ![tools](https://raw.githubusercontent.com/luiscruzcwb/Monitoramento-Infraestrutura/master/tools/check_rules_alertmanager.png)
 
+```yaml
+promtool check rules /etc/prometheus/
+```
+
+![tools](https://raw.githubusercontent.com/luiscruzcwb/Monitoramento-Infraestrutura/master/tools/check_rules_prometheus.png)
+
+```yaml
+promtool check rules /etc/prometheus/alertmanager.rules
+```
