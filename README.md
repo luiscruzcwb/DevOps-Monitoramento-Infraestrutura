@@ -1,8 +1,8 @@
 # Monitoramento - Infraestrutura
 
-Monitoramento Infraestrutura utilizando ferramentas e metodologias DevOps com:
+Monitoramento de Infraestrutura utilizando ferramentas e metodologias DevOps com:
 
--- Dockprom
+# Dockprom (https://github.com/stefanprodan/dockprom)
 - Prometheus 
 - Alertmanager
 - Nodeexporter
@@ -10,15 +10,13 @@ Monitoramento Infraestrutura utilizando ferramentas e metodologias DevOps com:
 - Grafana
 - Pushgateway
 - Caddy
-- https://github.com/stefanprodan/dockprom
+- 
 
-
--- Nginx Proxy Manager
+# Nginx Proxy Manager (https://nginxproxymanager.com)
 - Proxy Manager
-- https://nginxproxymanager.com
 
--- Nagios 
-- Nagios Core 4.4.6
-- https://hub.docker.com/r/guessi/docker-nagios4
+# Nagios 
+- Nagios Core 4.4.6 (https://hub.docker.com/r/guessi/docker-nagios4)
 
+![tools](https://raw.githubusercontent.com/luiscruzcwb/Monitoramento-Infraestrutura/master/tools/check_rules_alertmanager.png)
 
